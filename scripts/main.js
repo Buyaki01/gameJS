@@ -16,6 +16,8 @@ if(playGame){
           :playerOne === "scisssors" && computer === "rock" ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
           :`playerOne: ${playerOne}\nComputer: ${computer}\nPlayerOne wins!`
           alert(result);
+        let playAgain = confirm("Play Again?");
+        playAgain ? location.reload() :alert("Ok, maybe next time")
     }else{
       alert("You didn't enter rock, paper or scissors")
     }
